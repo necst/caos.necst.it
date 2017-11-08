@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>CAOS</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div id="particle-canvas"></div>
+		<div id="left-logo"><img src="necst_logo.png"/></div>
+		<div id="right-logo"><img src="poli_logo.png"/></div>
+ 		<div id="caos-text"><span class="acronym">C</span>AD as an <span class="acronym">A</span>daptive <span class="acronym">O</span>penPlatform <span class="acronym">S</span>ervice
+		<br><br>Coming Soon!</div>
+
+		<script src="https://rawgit.com/JulianLaval/canvas-particle-network/master/particle-network.min.js"></script>
+		<script src="particle.js"></script>
+		<script>
+			var canvasDiv = document.getElementById('particle-canvas');
+			var options = {
+	 		  particleColor: '#888',
+			  background: 'caos_bg.jpg',
+			  interactive: true,
+			  speed: 'medium',
+			  density: 'high'
+			};
+			var particleCanvas = new ParticleNetwork(canvasDiv, options);
+		</script>
+	</body>
+</html>
