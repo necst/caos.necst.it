@@ -15,16 +15,15 @@ body {
 
 #caos-text {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 40%;
   z-index: 1000;
   color: white;
   font-family: Impact;
   font-size: 40px;
   text-align: center;
   height: 100px;
-  width: 700px;
-  margin: -50px 0 0 -350px;
+  width:100%;
+  margin:0 auto;
 }
 
 span.acronym {
@@ -45,4 +44,28 @@ span.acronym {
   right: 10px;
   z-index: 99;
 // background-color: rgba(255, 255, 255, 0.9);
+}
+div.iccd-info
+{
+  color:#222;
+  font-size:24px;
+  background-color: rgba(255, 255, 255, 0.7);
+  width:100%;
+  margin-top:20px;
+  padding: 10px 0px;
+}
+div.iccd-info p
+{
+  margin:10px 0px;
+  font-family: verdana;
+}
+div.iccd-info a
+{
+  color:#33F;
+  text-decoration: none;
+}
+div.iccd-info a:hover
+{
+  color:#33F;
+  text-decoration: underline;
 }
