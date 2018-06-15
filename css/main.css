@@ -1,3 +1,11 @@
+html
+{
+    background: url("/caos_bg.jpg");
+}
+.uk-container
+{
+    background: #fff;
+}
 p,label,input,td,tr,b,li
 {
     color:#444;
