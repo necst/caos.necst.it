@@ -1,40 +1,91 @@
 <html>
 	<head>
-		<title>CAOS</title>
+		<title>CAOS: CAD as an Adaptive OpenPlatform Service</title>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="style.css">
+
+        <meta http-equiv="Content-Language" content="en"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+
+		<script type="text/javascript" src="/js/uikit.js"></script>
+		<script type="text/javascript" src="/js/uikit-icons.js"></script>
+
+        <link rel="stylesheet" href="/css/uikit.min.css" />
+        <link rel="stylesheet" href="/css/main.css" />
 	</head>
 	<body>
-		<div id="particle-canvas"></div>
-		<div id="left-logo"><img src="necst_logo.png"/></div>
-		<div id="right-logo"><img src="poli_logo.png"/></div>
 
- 		<div id="caos-text"><span class="acronym">C</span>AD as an <span class="acronym">A</span>daptive <span class="acronym">O</span>penPlatform <span class="acronym">S</span>ervice
+        <div class="uk-section uk-padding-remove-vertical">
+            <div class="uk-container uk-padding-remove uk-position-relative">
 
-		<div class="iccd-info">
-			<p>
-				<b>CAOS available at: <a target="_blank" href="http://caos-iccd.necst.it/">caos-iccd.necst.it</a></b>
-			<p/>
-			<p style="font-size:20px">
-				Try it using one of the <a target="_blank" href="https://github.com/necst/tutorial_iccd17_code/">demo applications</a> presented during the ICCD 2017 tutorial.
-			</p>
-			<p style="font-size:20px">
-				Video tutorial <a target="_blank" href="http://tinyurl.com/CAOS-ICCD17">available here</a>.
-			</p>
-		</div>
+                <header>
+                    <nav class="uk-navbar uk-nav-header top-nav uk-position-relative uk-flex-middle" data-uk-navbar>
+                        <div class="uk-margin-left uk-width-small caos-logo">
+                            <a href="https://caos.necst.it">
+                                <img src="/caos-logo.png" alt="CAOS" />
+                            </a>
+                        </div>
+                        <div id="caos-text">
+                            <span class="acronym">C</span>AD as an <span class="acronym">A</span>daptive <span class="acronym">O</span>penPlatform <span class="acronym">S</span>ervice
+                        </div>
+                    </nav>
 
-		<script src="https://rawgit.com/JulianLaval/canvas-particle-network/master/particle-network.min.js"></script>
-		<script src="particle.js"></script>
-		<script>
-			var canvasDiv = document.getElementById('particle-canvas');
-			var options = {
-	 		  particleColor: '#888',
-			  background: 'caos_bg.jpg',
-			  interactive: true,
-			  speed: 'medium',
-			  density: 'high'
-			};
-			var particleCanvas = new ParticleNetwork(canvasDiv, options);
-		</script>
+                </header>
+
+            </div>
+            <div class="uk-container">
+                <div class="uk-margin-top uk-text-justify">
+                    <p>
+                        The increasing demand for computing power in fields such as biology, finance, machine learning
+                        is pushing the adoption of reconfigurable hardware in order to keep up with the required performance
+                        level at a sustainable power consumption.
+                        Within this context, FPGA devices represent an interesting solution as they combine the benefits of power efficiency,
+                        performance and flexibility.
+                        Nevertheless, the steep learning curve and experience needed to develop efficient
+                        FPGA-based systems represents one of the main limiting factor for a broad utilization of such devices.
+                    </p>
+                    <p>
+                        CAOS (CAD as an Adaptive OpenPlatform Service), is a framework which helps the application
+                        designer in identifying acceleration opportunities and guides through the implementation of the final FPGA-based system.
+                        The CAOS platform targets the full stack of the application optimization process,
+                        starting from the identification of the kernel functions to accelerate,
+                        to the optimization of such kernels and to the generation of the runtime management and the
+                        configuration files needed to program the FPGA.
+                    </p>
+
+                    <p>
+                        <b>CAOS is available at: <a target="_blank" href="http://caos-iccd.necst.it/">caos-iccd.necst.it</a></b>
+                    </p>
+                    <p>
+                        Try it using one of the <a target="_blank" href="https://github.com/necst/tutorial_iccd17_code/">demo applications</a> presented during at ICCD 2017 following the
+                        <a target="_blank" href="/caos-tutorial.pdf">CAOS tutorial slides</a>.
+                    </p>
+                    <p>
+                        Additional video tutorial <a target="_blank" href="http://tinyurl.com/CAOS-ICCD17">available here</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="uk-container uk-padding-remove uk-position-relative">
+                <footer>
+                    <hr/>
+                    <div class="uk-grid uk-child-width-1-3@s uk-flex-middle uk-text-center">
+                        <div>
+                            <img style="max-width: 120px" class="uk-width-small" src="/necst-logo.png" />
+                        </div>
+                        <div>
+                            <img class="uk-width-small uk-padding uk-padding-remove-horizontal" src="/extra-logo.png" />
+                        </div>
+                        <div>
+                            <img class="uk-width-small" src="/polimi-logo.png" />
+                        </div>
+                    </div>
+                </footer>
+            </div>
+
+        </div>
+
 	</body>
 </html>
