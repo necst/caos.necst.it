@@ -43,3 +43,16 @@ span.acronym {
 a {
     color: #1e87f0;
 }
+h2
+{
+    font-size:24px;
+    margin: 8px 0;
+    padding: 0;
+}
+h3
+{
+    font-size:18px;
+    border-bottom: solid 1px #888;
+    margin: 8px 0;
+    padding: 0;
+}
